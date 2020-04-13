@@ -6,7 +6,7 @@ import { FooterBackground } from './styled';
 const Footer = () => {
   return (
     <FooterBackground>
-      <div>
+      <div className="text-lg mg:text-xl">
         <p>
           Made with <FiHeart className="inline-block" /> by Alberto Zanotti
         </p>
