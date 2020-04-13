@@ -3,16 +3,15 @@ import Pill from '../Pill';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useTranslation } from 'react-i18next';
 
-import { ProjectCard, ProjectImage, ProjectButton } from './styled';
+import { ProjectCard, ProjectButton } from './styled';
 
 const Project = ({ project }) => {
   const { t } = useTranslation();
   return (
     <ProjectCard className="overflow-hidden shadow-md hover:shadow-2xl mb-8 relative">
       <LazyLoadImage
-        className="object-cover object-center h-64"
+        className="object-cover object-center h-64 w-full"
         alt="Screenshot progetto"
-        width="100%"
         src={project.img}
       ></LazyLoadImage>
       <div className="card-content px-5 mt-4">
