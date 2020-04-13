@@ -1,29 +1,36 @@
 const lightTheme = {
-  accent: '#ff5a60',
+  accent: '#e92d6c',
   textColor: '#2f3744',
   textColorInverse: '#FEFEFE',
   backgroundColor: '#FAFAFA',
   landing: {
     textColor: '#fff',
     overlayColor: '#49187b',
-    overlayOpacity: '0.1',
+    overlayOpacity: '0.2',
+    bg1: '#e92d6c',
+    bg2: '#3503ad',
     buttonColor: '#fff',
-    buttonText: '#ff5a60',
+    buttonText: '#e92d6c',
   },
   themeToggle: {
-    backgroundColor: '#ff5a60',
+    backgroundColor: '#e92d6c',
     switchColor: '#eee',
   },
   langSelector: {
-    backgroundColor: '#ff5a60',
+    backgroundColor: '#e92d6c',
     switchColor: '#eee',
   },
   projectCard: {
     backgroundColor: '#FFF',
   },
   toolCard: {
-    bg1: '#3503ad',
-    bg2: '#f7308c',
+    bg1: '#e92d6c',
+    bg2: '#3503ad',
+  },
+  footer: {
+    bg1: '#e92d6c',
+    bg2: '#3503ad',
+    textColor: '#FFF',
   },
 };
 

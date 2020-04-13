@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ProjectCard = styled.div`
-  height: 38rem;
+  height: 37rem;
   border-radius: 8px;
   background-color: ${(props) => props.theme.projectCard.backgroundColor};
 
@@ -11,7 +11,7 @@ export const ProjectCard = styled.div`
 `;
 
 export const ProjectImage = styled.img`
-  height: 19rem;
+  height: 15rem;
   width: 100%;
 `;
 

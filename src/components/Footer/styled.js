@@ -7,10 +7,10 @@ export const FooterBackground = styled.section`
   align-items: center;
   height: 8rem;
   width: 100%;
-  color: ${(props) => props.theme.textColorInverse};
+  color: ${(props) => props.theme.footer.textColor};
   font-weight: bold;
   font-size: 1.3rem;
   text-align: center;
   background: ${(p) =>
-    `linear-gradient(45deg, ${p.theme.toolCard.bg1} 0%, ${p.theme.toolCard.bg2} 75%)`};
+    `linear-gradient(45deg, ${p.theme.footer.bg1} 0%, ${p.theme.footer.bg2} 75%)`};
 `;

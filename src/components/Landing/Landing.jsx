@@ -4,21 +4,14 @@ import Scroller from '../Scroller';
 import { useTranslation } from 'react-i18next';
 
 const Landing = () => {
-  // Translation
   const { t } = useTranslation();
 
-  // Update windows.innerHeight on resize (debounce 100ms)
-  const [dimensions, setDimensions] = React.useState({
-    height: window.innerHeight,
-    width: window.innerWidth,
-  });
+  // Update windows.innerHeight on resize (debounce every 400ms)
+  const [height, setHeight] = React.useState(window.innerHeight);
   React.useEffect(() => {
     const debouncedHandleResize = debounce(function handleResize() {
-      setDimensions({
-        height: window.innerHeight,
-        width: window.innerWidth,
-      });
-    }, 500);
+      setHeight(window.innerHeight);
+    }, 400);
 
     window.addEventListener('resize', debouncedHandleResize);
 
@@ -28,11 +21,8 @@ const Landing = () => {
   });
 
   return (
-    <Background
-      innerHeight={dimensions.height}
-      className="relative w-full flex items-center sm:justify-start"
-    >
-      <div className="px-8 sm:px-6 lg:px-10 xl:px-12 z-10 mt-40">
+    <Background innerHeight={height} className="relative w-full flex items-center sm:justify-start">
+      <div className="px-8 sm:px-6 lg:px-10 xl:px-32 z-10 mt-40">
         <TextWrapper className="leading-none">
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black">{t('Greetings-1')}</h1>
           <h3 className="text-3xl sm:text-5xl lg:text-6xl font-black">{t('Greetings-2')}</h3>

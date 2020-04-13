@@ -2,9 +2,11 @@ import styled from 'styled-components';
 
 export const Background = styled.section`
   height: ${(props) => `${props.innerHeight}px`};
+  width: 100%;
   position: relative;
-  background: url('https://ik.imagekit.io/albizan/bg_fo3KEpBQu.jpg') no-repeat center center;
-  background-size: cover;
+  background: ${(props) => props.theme.landing.bg2};
+  background: ${(p) =>
+    `linear-gradient(45deg, ${p.theme.landing.bg1} 0%, ${p.theme.landing.bg2} 100%)`};
 `;
 
 export const Overlay = styled.div`
@@ -21,10 +23,11 @@ export const Overlay = styled.div`
 export const EnterButton = styled.a`
   margin-top: 20px;
   display: inline-block;
+  border: 2px solid ${(props) => props.theme.landing.buttonColor};
   background-color: ${(props) => props.theme.landing.buttonColor};
   color: ${(props) => props.theme.landing.buttonText};
   transition: background-color 0.2s, color 0.2s;
-  border-radius: 14px;
+  border-radius: 10px;
 
   &:hover {
     background-color: ${(props) => props.theme.landing.buttonText};

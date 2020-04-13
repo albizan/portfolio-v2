@@ -8,7 +8,7 @@ export const ToolCardBackground = styled.div`
   border-radius: 0.4rem;
   overflow: hidden;
   background: ${(p) =>
-    `linear-gradient(45deg, ${p.theme.toolCard.bg1} 0%, ${p.theme.toolCard.bg2} 75%)`};
+    `linear-gradient(45deg, ${p.theme.toolCard.bg1} 0%, ${p.theme.toolCard.bg2} 100%)`};
   margin-bottom: 1rem;
   height: 15rem;
   width: 100%;
@@ -19,16 +19,6 @@ export const ToolCardBackground = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.1);
-    pointer-events: none;
-  }
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
     width: 50%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.1);
@@ -43,7 +33,7 @@ export const Button = styled.div`
   width: 50px;
   height: 50px;
   background: ${(p) =>
-    `linear-gradient(45deg, ${p.theme.toolCard.bg1} 0%, ${p.theme.toolCard.bg2} 75%)`};
+    `linear-gradient(45deg, ${p.theme.toolCard.bg1} 0%, ${p.theme.toolCard.bg2} 100%)`};
   border-top-left-radius: 50%;
   cursor: pointer;
   box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
@@ -88,7 +78,6 @@ export const ToolDescription = styled.div`
   opacity: 0;
   justify-content: center;
   align-items: center;
-  transition: opacity 0s;
   padding: 1.1rem;
   ${Button}:hover & {
     transition-delay: 0.4s;

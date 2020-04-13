@@ -5,10 +5,10 @@ const Circle = styled.span`
   position: absolute;
   border: 2px solid ${(props) => props.theme.accent};
   background-color: ${(props) => props.theme.backgroundColor};
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
-  left: -7px;
+  left: -8px;
   top: 6px;
 `;
 
