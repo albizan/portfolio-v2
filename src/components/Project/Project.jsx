@@ -1,5 +1,6 @@
 import React from 'react';
 import Pill from '../Pill';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useTranslation } from 'react-i18next';
 
 import { ProjectCard, ProjectImage, ProjectButton } from './styled';
@@ -8,7 +9,12 @@ const Project = ({ project }) => {
   const { t } = useTranslation();
   return (
     <ProjectCard className="overflow-hidden shadow-md hover:shadow-2xl mb-8 relative">
-      <ProjectImage loading="lazy" src={project.img} className="object-cover object-center" />
+      <LazyLoadImage
+        className="object-cover object-center h-64"
+        alt="Screenshot progetto"
+        width="100%"
+        src={project.img}
+      ></LazyLoadImage>
       <div className="card-content px-5 mt-4">
         <div className="pills flex flex-wrap justify-center sm:justify-start">
           {renderPills(project.tags)}
@@ -16,11 +22,10 @@ const Project = ({ project }) => {
         <div className="card-title mt-3 h-40">
           <h4 className="text-lg font-black tracking-wide">{t(project.title)}</h4>
           <p className="mt-1">{t(project.brief_description)}</p>
-        </div>
-        <div className="libraries">
-          <p className="font-bold text-md">Librerie:</p>
+          <p className="font-bold text-md mt-3">Librerie:</p>
           <div className="flex flex-wrap justify-start">{renderLibraries(project.libraries)}</div>
         </div>
+        <div className="libraries"></div>
       </div>
       <div className="card-footer mx-10 border-t project-show-button flex justify-center items-center py-3 absolute bottom-0 right-0 left-0">
         <ProjectButton className="inline-block font-black rounded-full tracking-tight uppercase py-1 px-3">
