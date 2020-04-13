@@ -11,14 +11,18 @@ const Education = (props) => {
       <Subtitle className="text-lg sm:text-xl">{t('Resume Education')}</Subtitle>
       <TimeLineItem
         year={2015}
-        event={t('Resume Event High School')}
-        issuer={t('Resume High School Issuer')}
+        event={t('education_item_1_event')}
+        issuer={t('education_item_1_paragraph')}
       />
-      <TimeLineItem year={2015} event={t('Resume Event First')} issuer={t('Resume First Issuer')} />
+      <TimeLineItem
+        year={2015}
+        event={t('education_item_2_event')}
+        issuer={t('education_item_2_paragraph')}
+      />
       <TimeLineItem
         year={2018}
-        event={t('Resume Bachelor Event')}
-        issuer={t('Resume Bachelor Issuer')}
+        event={t('education_item_3_title')}
+        issuer={t('education_item_3_paragraph')}
         latest={true}
       />
     </div>

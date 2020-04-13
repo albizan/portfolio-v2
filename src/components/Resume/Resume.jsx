@@ -10,7 +10,7 @@ const Resume = (props) => {
   return (
     <section className="container px-8 mx-auto mt-16">
       <h2 className="text-center sm:text-left text-2xl sm:text-3xl md:text-4xl font-black tracking-none">
-        {t('Resume Title')}
+        {t('resume_title')}
       </h2>
       <div className="sm:flex sm:flex-wrap">
         <div className="sm:w-1/2">

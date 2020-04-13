@@ -9,11 +9,11 @@ const Skills = (props) => {
   return (
     <div className="px-0">
       <Subtitle className="text-lg sm:text-xl">Soft Skills</Subtitle>
-      <SkillBar skillName={t('Soft SKill Curiosity')} width="90" />
-      <SkillBar skillName={t('Soft SKill Organization')} width="80" />
-      <SkillBar skillName={t('Soft SKill Persistance')} width="90" />
-      <SkillBar skillName={t('Soft SKill Teamwork')} width="80" />
-      <SkillBar skillName={t('Soft SKill Learn')} width="100" />
+      <SkillBar skillName={t('soft_skill_curiosity')} width="90" />
+      <SkillBar skillName={t('soft_skill_organization')} width="80" />
+      <SkillBar skillName={t('soft_skill_persistance')} width="90" />
+      <SkillBar skillName={t('soft_skill_teamwork')} width="80" />
+      <SkillBar skillName={t('soft_skill_learning')} width="100" />
     </div>
   );
 };
