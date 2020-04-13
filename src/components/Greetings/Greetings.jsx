@@ -6,10 +6,10 @@ const Greetings = (props) => {
   return (
     <section id="greetings" className="container px-8 mx-auto mt-16">
       <h2 className="text-center sm:text-left text-2xl sm:text-3xl md:text-4xl font-black tracking-none">
-        {t('Title Greetings')}
+        {t('greetings_title')}
       </h2>
       <p className="text-justify sm:text-left tracking-wide mt-4 sm:text-xl">
-        {t('Text Greetings')}
+        {t('greetings_text_1')}
       </p>
     </section>
   );
