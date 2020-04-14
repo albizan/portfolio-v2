@@ -21,7 +21,7 @@ const Education = (props) => {
       />
       <TimeLineItem
         year={2018}
-        event={t('education_item_3_title')}
+        event={t('education_item_3_event')}
         issuer={t('education_item_3_paragraph')}
         latest={true}
       />
