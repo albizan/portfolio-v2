@@ -19,7 +19,7 @@ const landing_button_text = {
   en: 'Enter',
 };
 
-export const landing_transaltions_en = {
+export const landing_translation_en = {
   landing_title: landing_title.en,
   landing_subtitle: landing_subtitle.en,
   landing_text_1: landing_text_1.en,
@@ -27,7 +27,7 @@ export const landing_transaltions_en = {
   landing_button_text: landing_button_text.en,
 };
 
-export const landing_transaltions_it = {
+export const landing_translation_it = {
   landing_title: landing_title.it,
   landing_subtitle: landing_subtitle.it,
   landing_text_1: landing_text_1.it,

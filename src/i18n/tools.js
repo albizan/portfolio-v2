@@ -23,7 +23,7 @@ const nest_description = {
   en: 'Using javascript on the backend is OK right? Well... Typescript is even better! :)',
 };
 
-export const tools_transaltions_en = {
+export const tools_translation_en = {
   vscode_description: vscode_description.en,
   tailwind_description: tailwind_description.en,
   react_description: react_description.en,
@@ -31,7 +31,7 @@ export const tools_transaltions_en = {
   nest_description: nest_description.en,
 };
 
-export const tools_transaltions_it = {
+export const tools_translation_it = {
   vscode_description: vscode_description.it,
   tailwind_description: tailwind_description.it,
   react_description: react_description.it,

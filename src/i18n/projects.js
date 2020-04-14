@@ -90,7 +90,7 @@ const show_more_button = {
   en: 'Show More',
 };
 
-export const projects_transaltions_en = {
+export const projects_translation_en = {
   project_1_name: project_1_name.en,
   project_1_brief_description: project_1_brief_description.en,
   project_1_description: project_1_description.en,
@@ -113,7 +113,7 @@ export const projects_transaltions_en = {
   show_more_button: show_more_button.en,
 };
 
-export const projects_transaltions_it = {
+export const projects_translation_it = {
   project_1_name: project_1_name.it,
   project_1_brief_description: project_1_brief_description.it,
   project_1_description: project_1_description.it,

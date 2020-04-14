@@ -51,7 +51,7 @@ const soft_skill_learning = {
   en: 'Willingness to Learn',
 };
 
-export const resume_transaltions_en = {
+export const resume_translation_en = {
   resume_title: resume_title.en,
   education: education.en,
   education_item_1_event: education_item_1_event.en,
@@ -67,7 +67,7 @@ export const resume_transaltions_en = {
   soft_skill_learning: soft_skill_learning.en,
 };
 
-export const resume_transaltions_it = {
+export const resume_translation_it = {
   resume_title: resume_title.it,
   education: education.it,
   education_item_1_event: education_item_1_event.it,

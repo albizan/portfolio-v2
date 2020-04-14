@@ -9,12 +9,12 @@ const greetings_text_1 = {
     "Welcome to my website, I am glad you visited my personal space, here is where I am proud to show my skills, projects, past experiences and future hopes in the web development field. I am a 23-year-old geek located in beautiful Turin, Italy. I got my bachelor degree in Computer Engineering at the Politecnico di Torino. I love new web technologies, both on the front-end and on the back-end. I am currently studying to become a full stack developer with React and Node. As a web developer, officialy I make websites and design restful APIs. But really? Well, I try to build software users appreciate: secure, fast, easy to use and understand with a clean and elegant user interface. I'm persistent, curious and continuously working on improving my capabilities",
 };
 
-export const greetings_transaltions_en = {
+export const greetings_translation_en = {
   greetings_title: greetings_title.en,
   greetings_text_1: greetings_text_1.en,
 };
 
-export const greetings_transaltions_it = {
+export const greetings_translation_it = {
   greetings_title: greetings_title.it,
   greetings_text_1: greetings_text_1.it,
 };
