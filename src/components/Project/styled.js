@@ -1,18 +1,19 @@
 import styled from 'styled-components';
 
 export const ProjectCard = styled.div`
-  height: 37rem;
+  height: 28rem;
   border-radius: 8px;
   background-color: ${(props) => props.theme.projectCard.backgroundColor};
 
-  /* @media screen and (min-width: 38rem) {
-    height: 38rem;
-  } */
-`;
-
-export const ProjectImage = styled.img`
-  height: 15rem;
-  width: 100%;
+  @media screen and (min-width: 748px) {
+    height: 30rem;
+  }
+  @media screen and (min-width: 1024px) {
+    height: 30rem;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 30rem;
+  }
 `;
 
 export const ProjectButton = styled.a`
