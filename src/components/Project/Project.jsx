@@ -10,19 +10,17 @@ const Project = ({ project }) => {
   return (
     <ProjectCard className="overflow-hidden shadow-md hover:shadow-2xl mb-8 relative">
       <LazyLoadImage
-        className="object-cover object-center h-64 w-full"
+        className="object-cover object-center h-48 md:h.56 lg:h-64 w-full"
         alt="Screenshot progetto"
         src={project.img}
       ></LazyLoadImage>
       <div className="card-content px-5 mt-4">
-        <div className="pills flex flex-wrap justify-center sm:justify-start">
+        <div className="pills flex flex-wrap justify-center md:justify-start">
           {renderPills(project.tags)}
         </div>
-        <div className="card-title mt-3 h-40">
+        <div className="card-title mt-3">
           <h4 className="text-lg font-black tracking-wide">{t(project.title)}</h4>
           <p className="mt-1">{t(project.brief_description)}</p>
-          <p className="font-bold text-md mt-3">Librerie:</p>
-          <div className="flex flex-wrap justify-start">{renderLibraries(project.libraries)}</div>
         </div>
         <div className="libraries"></div>
       </div>
@@ -39,7 +37,7 @@ function renderPills(tags) {
   return tags.map((t) => <Pill key={t} value={t} />);
 }
 
-function renderLibraries(libraries) {
+/* function renderLibraries(libraries) {
   if (libraries.length !== 0) {
     return libraries.map((l) => (
       <span className="mr-2 text-sm inline-block" key={l}>
@@ -47,6 +45,6 @@ function renderLibraries(libraries) {
       </span>
     ));
   }
-}
+} */
 
 export default Project;
