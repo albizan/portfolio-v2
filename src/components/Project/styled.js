@@ -9,10 +9,10 @@ export const ProjectCard = styled.div`
     height: 30rem;
   }
   @media screen and (min-width: 1024px) {
-    height: 30rem;
+    height: 32rem;
   }
   @media screen and (min-width: 1280px) {
-    height: 30rem;
+    height: 32rem;
   }
 `;
 
