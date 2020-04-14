@@ -4,31 +4,31 @@
       "id": 1,
       "name": "VsCode",
       "image": "https://ik.imagekit.io/albizan/vscode_ZjXLocX9kX.png",
-      "description": "Lot of themes and extensions"
+      "description": "vscode_description"
     },
     {
       "id": 2,
       "name": "Tailwind",
       "image": "https://ik.imagekit.io/albizan/tailwind_qKc0uLsFg.png",
-      "description": "Ulity First CSS for the win! Easy to use with Postcss"
+      "description": "tailwind_description"
     },
     {
       "id": 3,
       "name": "React",
       "image": "https://ik.imagekit.io/albizan/react_o6aV5Fwjk.png",
-      "description": "Great UI library, I love jsx and new react hooks"
+      "description": "react_description"
     },
     {
       "id": 4,
       "name": "Node",
       "image": "https://ik.imagekit.io/albizan/node_Xuad1CRdBk.png",
-      "description": "Fast, asynchronous and a ton of great packages"
+      "description": "node_description"
     },
     {
       "id": 5,
       "name": "Nest",
       "image": "https://ik.imagekit.io/albizan/nest_2Q2jYDzUy-.png",
-      "description": "Typescript, Typescript and... Typescript!"
+      "description": "nest_description"
     }
   ]
 }

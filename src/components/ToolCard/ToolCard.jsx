@@ -1,8 +1,10 @@
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { ToolCardBackground, Button, Hint, ToolDescription } from './styled';
+import { useTranslation } from 'react-i18next';
 
 const ToolCard = ({ name, image, description }) => {
+  const { t } = useTranslation();
   return (
     <ToolCardBackground className="shadow-md hover:shadow-2xl">
       <div id="image-box">
@@ -16,7 +18,7 @@ const ToolCard = ({ name, image, description }) => {
       </div>
       <Button>
         <Hint>Why?</Hint>
-        <ToolDescription>{description}</ToolDescription>
+        <ToolDescription>{t(description)}</ToolDescription>
       </Button>
     </ToolCardBackground>
   );
