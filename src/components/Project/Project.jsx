@@ -26,7 +26,7 @@ const Project = ({ project }) => {
       </div>
       <div className="card-footer mx-10 border-t project-show-button flex justify-center items-center py-3 absolute bottom-0 right-0 left-0">
         <ProjectButton className="inline-block font-black rounded-full tracking-tight uppercase py-1 px-3">
-          {t('Show More')}
+          {t('show_more_button')}
         </ProjectButton>
       </div>
     </ProjectCard>
