@@ -1,17 +1,13 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
-
 import getTheme from '../../theming';
 
-// Components
 import ThemeToggle from '../ThemeToggle';
 import LangSelector from '../LangSelector';
-import Landing from '../Landing';
-import Greetings from '../Greetings';
-import Resume from '../Resume';
-import Projects from '../Projects';
-import Tools from '../Tools';
-import Footer from '../Footer';
+
+import Homepage from '../../pages/Homepage';
+import Projectpage from '../../pages/Projectpage';
 
 // Styled Components
 import { GlobalStyles } from './styled';
@@ -22,7 +18,6 @@ const App = () => {
 
   // toggleThemeType gets fired when user click on theme toggle button
   const toggleThemeType = () => {
-    console.log('Toggling theme');
     const newThemeType = themeType === 'light' ? 'dark' : 'light';
     localStorage.setItem('themeType', newThemeType);
     setThemeType(newThemeType);
@@ -35,12 +30,19 @@ const App = () => {
       <GlobalStyles id="app">
         <ThemeToggle themeType={themeType} onClick={toggleThemeType} />
         <LangSelector />
-        <Landing />
-        <Greetings />
-        <Resume />
-        <Projects />
-        <Tools />
-        <Footer />
+        <Router>
+          <Switch>
+            <Route
+              exact
+              path="/"
+              component={() => (
+                <Homepage themeType={themeType} onClickToggleTheme={toggleThemeType} />
+              )}
+            />
+            <Route exact path="/project/:id" component={Projectpage} />
+            <Redirect to="/" />
+          </Switch>
+        </Router>
       </GlobalStyles>
     </ThemeProvider>
   );

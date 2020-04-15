@@ -10,10 +10,6 @@ import i18n from './i18n';
 
 ReactDOM.render(
   <React.StrictMode>
-    {/*
-     * Every component in this tree has acces to the same i18n instance thanks to react context api
-     * If I want to change i18n config I have to use const '{ i18n } = useTranslation()' hook
-     */}
     <I18nextProvider i18n={i18n}>
       <App />
     </I18nextProvider>

@@ -25,7 +25,11 @@ const Project = ({ project }) => {
         <div className="libraries"></div>
       </div>
       <div className="card-footer mx-10 border-t project-show-button flex justify-center items-center py-3 absolute bottom-0 right-0 left-0">
-        <ProjectButton className="inline-block font-black rounded-full tracking-tight uppercase py-1 px-3">
+        {/* // ProjectButton is a React Router Link component styled with styled-components */}
+        <ProjectButton
+          to={`/project/${project.id}`}
+          className="inline-block font-black rounded-full tracking-tight uppercase py-1 px-3"
+        >
           {t('show_more_button')}
         </ProjectButton>
       </div>

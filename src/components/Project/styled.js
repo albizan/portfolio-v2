@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const ProjectCard = styled.div`
-  height: 28rem;
+  height: 30rem;
   border-radius: 8px;
   background-color: ${(props) => props.theme.projectCard.backgroundColor};
 
@@ -16,7 +17,7 @@ export const ProjectCard = styled.div`
   }
 `;
 
-export const ProjectButton = styled.a`
+export const ProjectButton = styled(Link)`
   color: ${(props) => props.theme.accent};
   cursor: pointer;
 
