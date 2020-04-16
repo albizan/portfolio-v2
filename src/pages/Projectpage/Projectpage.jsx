@@ -1,13 +1,23 @@
 import React from 'react';
 import { FiArrowLeft } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Redirect } from 'react-router-dom';
 import { LinkButton } from './styled';
 
 const Projectpage = (props) => {
   const { t } = useTranslation();
   const history = useHistory();
-  const { project } = props.location.state;
+  let project;
+  if (props.location.state) {
+    project = props.location.state.project || null;
+  } else {
+    project = null;
+  }
+
+  if (project === null) {
+    return <Redirect to="/" />;
+  }
+  console.log(project);
   return (
     <div className="h-screen w-full px-4 pt-4">
       <section className="container mx-auto">
