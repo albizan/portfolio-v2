@@ -8,7 +8,7 @@ const Education = (props) => {
 
   return (
     <div className="sm:pr-2">
-      <Subtitle className="text-lg sm:text-xl">{t('Resume Education')}</Subtitle>
+      <Subtitle className="text-lg sm:text-xl">{t('resume_title')}</Subtitle>
       <TimeLineItem
         year={2015}
         event={t('education_item_1_event')}

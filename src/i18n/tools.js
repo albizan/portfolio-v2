@@ -1,3 +1,7 @@
+const tools_section_title = {
+  it: 'Gli strumenti che uso',
+  en: 'Tools I like to use',
+};
 const vscode_description = {
   it: 'Tanti temi e utili estensioni',
   en: 'Lot of themes and useful extensions',
@@ -24,6 +28,7 @@ const nest_description = {
 };
 
 export const tools_translation_en = {
+  tools_section_title: tools_section_title.en,
   vscode_description: vscode_description.en,
   tailwind_description: tailwind_description.en,
   react_description: react_description.en,
@@ -32,6 +37,7 @@ export const tools_translation_en = {
 };
 
 export const tools_translation_it = {
+  tools_section_title: tools_section_title.it,
   vscode_description: vscode_description.it,
   tailwind_description: tailwind_description.it,
   react_description: react_description.it,

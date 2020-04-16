@@ -8,7 +8,7 @@ const Tools = (props) => {
   return (
     <section id="tools" className="container px-8 mx-auto mt-16">
       <h2 className="text-center sm:text-left text-2xl sm:text-3xl md:text-4xl font-black tracking-none">
-        {t('Tools Section Title')}
+        {t('tools_section_title')}
       </h2>
       <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 md:grid-cols-3 md:gap-8">
         {renderTools(tools)}

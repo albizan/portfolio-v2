@@ -1,3 +1,8 @@
+const projects_title = {
+  it: 'Alcuni dei miei progetti',
+  en: 'Some stuff I enjoyed coding',
+};
+
 const project_1_name = {
   it: 'Il mio sito web personale',
   en: 'My personal website',
@@ -91,6 +96,7 @@ const show_more_button = {
 };
 
 export const projects_translation_en = {
+  projects_title: projects_title.en,
   project_1_name: project_1_name.en,
   project_1_brief_description: project_1_brief_description.en,
   project_1_description: project_1_description.en,
@@ -114,6 +120,7 @@ export const projects_translation_en = {
 };
 
 export const projects_translation_it = {
+  projects_title: projects_title.it,
   project_1_name: project_1_name.it,
   project_1_brief_description: project_1_brief_description.it,
   project_1_description: project_1_description.it,
