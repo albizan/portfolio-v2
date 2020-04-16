@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const ProjectCard = styled.div`
-  height: 30rem;
+  height: 32rem;
   border-radius: 8px;
   background-color: ${(props) => props.theme.projectCard.backgroundColor};
 
