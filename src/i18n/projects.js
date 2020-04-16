@@ -3,6 +3,16 @@ const projects_title = {
   en: 'Some stuff I enjoyed coding',
 };
 
+const project_description = {
+  it: 'Descrizione',
+  en: 'Description',
+};
+
+const project_libraries = {
+  it: 'Librerie',
+  en: 'Libraries',
+};
+
 const project_1_name = {
   it: 'Il mio sito web personale',
   en: 'My personal website',
@@ -13,8 +23,28 @@ const project_1_brief_description = {
   en: 'This is my personal website, brief introduction about me, some skills and some projects',
 };
 const project_1_description = {
-  it: '',
-  en: '',
+  it: `Questo è il mio sito web personale.
+  Ho inserito una breve introduzione su di me, alcune delle mie conoscenze tecniche e attitudini interpersonali. Nel sito è presente una sezione dedicata ad alcuni progetti che ho sviluppato in passato, per alcuni di essi ho inserito il link al repository pubblico sulla piattaforma Github.
+  
+  Questa seconda versione del mio portfolio è stata realizzata utilizzando il framework javascript React.js. Nonostante il sito in questione sia un semplice sito web statico che non necessita di interazione utente, ho deciso comunque di utilizzare React per avere una esperienza di sviluppo decisamente più moderna e per fare esperienza con una tecnologia sempre più richiesta nel mercato del lavoro. La scelta di react ha reso possibile rendere la struttura del codice più modulare in quanto ogni sezione del sito è composta da un componente separato. Questa “modularità” si è rivelata particolarmente utile per sviluppare la Timeline, le barre delle skill, le Card dei singoli progetti e le Card nella sezione strumenti.
+  
+  Ho inoltre deciso di includere un toggle per cambiare il tema del sito web in modo da avere un tema chiaro e un tema scuro. Per ottenere questa funzionalità ho utilizzato la libreria Styled-Components, che ha mi ha permesso di gestire i vari temi in maniera piuttosto elegante e pulita.
+  
+  Questa seconda versione, a differenza della prima, incorpora un toggle che consente di cambiare dinamicamente la lingua. Per ottenere ciò ho utilizzato la libreria i18next.
+  
+  La UI del sito è stata realizzata in parte scrivendo a mano il CSS all’interno degli styled-components ed in misura maggiore utilizzando il framework CSS TailwindCS. Utilizzo questo framework per via del suo approccio utility-first e mobile-first, l’alta customizzazione e soprattutto per la semplicità con cui è possibile definire stili diversi a seconda della dimensione dello schermo, in modo da rendere immediata la realizzazione di pagine responsive.
+  `,
+  en: `Questo è il mio sito web personale.
+  Ho inserito una breve introduzione su di me, alcune delle mie conoscenze tecniche e attitudini interpersonali. Nel sito è presente una sezione dedicata ad alcuni progetti che ho sviluppato in passato, per alcuni di essi ho inserito il link al repository pubblico sulla piattaforma Github.
+  
+  Questa seconda versione del mio portfolio è stata realizzata utilizzando il framework javascript React.js. Nonostante il sito in questione sia un semplice sito web statico che non necessita di interazione utente, ho deciso comunque di utilizzare React per avere una esperienza di sviluppo decisamente più moderna e per fare esperienza con una tecnologia sempre più richiesta nel mercato del lavoro. La scelta di react ha reso possibile rendere la struttura del codice più modulare in quanto ogni sezione del sito è composta da un componente separato. Questa “modularità” si è rivelata particolarmente utile per sviluppare la Timeline, le barre delle skill, le Card dei singoli progetti e le Card nella sezione strumenti.
+  
+  Ho inoltre deciso di includere un toggle per cambiare il tema del sito web in modo da avere un tema chiaro e un tema scuro. Per ottenere questa funzionalità ho utilizzato la libreria Styled-Components, che ha mi ha permesso di gestire i vari temi in maniera piuttosto elegante e pulita.
+  
+  Questa seconda versione, a differenza della prima, incorpora un toggle che consente di cambiare dinamicamente la lingua. Per ottenere ciò ho utilizzato la libreria i18next.
+  
+  La UI del sito è stata realizzata in parte scrivendo a mano il CSS all’interno degli styled-components ed in misura maggiore utilizzando il framework CSS TailwindCS. Utilizzo questo framework per via del suo approccio utility-first e mobile-first, l’alta customizzazione e soprattutto per la semplicità con cui è possibile definire stili diversi a seconda della dimensione dello schermo, in modo da rendere immediata la realizzazione di pagine responsive.
+  `,
 };
 
 const project_2_name = {
@@ -96,6 +126,8 @@ const show_more_button = {
 };
 
 export const projects_translation_en = {
+  project_description: project_description.en,
+  project_libraries: project_libraries.en,
   projects_title: projects_title.en,
   project_1_name: project_1_name.en,
   project_1_brief_description: project_1_brief_description.en,
@@ -120,6 +152,8 @@ export const projects_translation_en = {
 };
 
 export const projects_translation_it = {
+  project_description: project_description.it,
+  project_libraries: project_libraries.it,
   projects_title: projects_title.it,
   project_1_name: project_1_name.it,
   project_1_brief_description: project_1_brief_description.it,
