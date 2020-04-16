@@ -8,7 +8,7 @@ const Footer = () => {
   const { t } = useTranslation();
   return (
     <FooterBackground>
-      <div className="text-lg mg:text-xl">
+      <div className="text-lg text-sm mg:text-lg">
         <p>
           {t('footer_text_1_before_heart')} <FiHeart className="inline-block" />{' '}
           {t('footer_text_1_after_heart')}
