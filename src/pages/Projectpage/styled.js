@@ -13,3 +13,7 @@ export const LinkButton = styled.a`
     background-color: ${(props) => props.theme.accent};
   }
 `;
+
+export const ColoredLink = styled.a`
+  color: ${(props) => props.theme.accent};
+`;
