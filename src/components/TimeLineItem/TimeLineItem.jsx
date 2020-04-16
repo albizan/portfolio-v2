@@ -9,7 +9,7 @@ const Circle = styled.span`
   height: 15px;
   border-radius: 50%;
   left: -8px;
-  top: 6px;
+  top: 4px;
 `;
 
 const TimeLineElement = styled.div`
@@ -18,9 +18,9 @@ const TimeLineElement = styled.div`
 
 const TimeLineItem = ({ year, event, issuer, latest }) => {
   return (
-    <div className="flex items-stretch">
-      <div className="text-left hidden md:block font-bold mr-4">{year}</div>
-      <TimeLineElement latest={latest} className="h-32 pl-4 relative">
+    <div className="flex justify-start">
+      <div className="text-left hidden md:block font-bold w-12">{year}</div>
+      <TimeLineElement latest={latest} className="h-32 pl-3 relative">
         <Circle />
         <p className="md:hidden font-bold">{year}</p>
         <p className="font-bold">{event}</p>
