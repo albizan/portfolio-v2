@@ -23,8 +23,14 @@
       "tags": ["frontend", "web app", "react"],
       "title": "project_2_name",
       "brief_description": "project_2_brief_description",
-      "libraries": ["react", "react-router", "tailwind", "post-css"],
-      "description": "Git-finder was my first attempt to create a React dynamic web app to consume APIs. Here is where I discovered the utility first approach to style HTML elements. I built git-finder to start my journey with React and its ecosystem. React Router was also used.",
+      "libraries": [
+        { "label": "Reactjs", "url": "https://reactjs.org/" },
+        { "label": "React Router", "url": "https://reacttraining.com/react-router/" },
+        { "label": "Styled-Components", "url": "https://styled-components.com/" },
+        { "label": "Tailwindcss", "url": "https://tailwindcss.com/" },
+        { "label": "PostCSS", "url": "https://postcss.org/" }
+      ],
+      "description": "project_2_description",
       "links": [{ "url": "https://findgituser.netlify.com", "label": "Website" }],
       "repos": [{ "url": "https://github.com/albizan/git-finder", "label": "Github" }]
     },
@@ -35,8 +41,9 @@
       "title": "project_3_name",
       "brief_description": "project_3_brief_description",
       "libraries": [],
-      "description": "Architectural Firm website. A customized HTML template was used.",
-      "links": [{ "url": "https://www.artomzanotti.it", "label": "See Website" }]
+      "description": "project_3_description",
+      "links": [{ "url": "https://www.artomzanotti.it", "label": "Website" }],
+      "repos": []
     },
     {
       "id": 4,
@@ -44,11 +51,30 @@
       "tags": ["web app", "react", "node", "docker"],
       "title": "project_4_name",
       "brief_description": "project_4_brief_description",
-      "description": "Shortify is a link shortner. I made this web app while experimenting with some of my favourite technologies: React, Nodejs and Containers. The front-end is hosted on Netlify while the back-end is containerized thanks to Docker on a private VPS. I made a user registration process, passwords are safely hashed with bcrypt. Users can shorten and manage their links, that can be activated or deactived when requested",
-      "libraries": ["React", "TailwindCSS", "Formik"],
-      "link": "https://shortify.albertozanotti.it",
-      "github": "https://github.com/albizan/shortify-frontend",
-      "github2": "https://github.com/albizan/shortify-backend"
+      "description": "project_4_description",
+      "libraries": [
+        { "label": "Reactjs", "url": "https://reactjs.org/" },
+        { "label": "React Router", "url": "https://reacttraining.com/react-router/" },
+        { "label": "Formik", "url": "https://jaredpalmer.com/formik/docs/overview" },
+        { "label": "Styled-Components", "url": "https://styled-components.com/" },
+        { "label": "Bcryptjs", "url": "https://www.npmjs.com/package/bcryptjs" },
+        { "label": "NodeMailer", "url": "https://nodemailer.com/about/" },
+        { "label": "Redux", "url": "https://redux.js.org/" },
+        { "label": "Tailwindcss", "url": "https://tailwindcss.com/" },
+        { "label": "PostCSS", "url": "https://postcss.org/" },
+        { "label": "Nestjs", "url": "https://nestjs.com/" }
+      ],
+      "links": [{ "url": "https://shortify.albertozanotti.it", "label": "Website" }],
+      "repos": [
+        {
+          "url": "https://github.com/albizan/shortify-frontend",
+          "label": "Front-End"
+        },
+        {
+          "url": "https://github.com/albizan/shortify-backend",
+          "label": "Back-End"
+        }
+      ]
     },
     {
       "id": 5,
@@ -57,9 +83,9 @@
       "title": "project_5_name",
       "brief_description": "project_5_brief_description",
       "description": "project_5_description",
-      "libraries": ["telegrafjs"],
-      "links": [],
-      "github": []
+      "libraries": [{ "label": "Telegrafjs", "url": "https://telegraf.js.org/#/" }],
+      "links": [{ "url": "https://t.me/friendlyurl_bot", "label": "Telegram" }],
+      "repos": [{ "url": "https://github.com/albizan/friendly-url", "label": "Github" }]
     },
     {
       "id": 6,
@@ -67,11 +93,10 @@
       "tags": ["telegram", "bot", "docker"],
       "title": "project_6_name",
       "brief_description": "project_6_brief_description",
-      "description": "Shortify is a link shortner. I made this web app while experimenting with some of my favourite technologies: React, Nodejs and Containers. The front-end is hosted on Netlify while the back-end is containerized thanks to Docker on a private VPS. I made a user registration process, passwords are safely hashed with bcrypt. Users can shorten and manage their links, that can be activated or deactived when requested",
-      "libraries": ["telegrafjs"],
-      "link": "https://shortify.albertozanotti.it",
-      "github": "https://github.com/albizan/shortify-frontend",
-      "github2": "https://github.com/albizan/shortify-backend"
+      "description": "project_6_description",
+      "libraries": [{ "label": "Telegrafjs", "url": "https://telegraf.js.org/#/" }],
+      "links": [{ "url": "https://t.me/mitricvenbot", "label": "Telegram" }],
+      "repos": [{ "url": "https://github.com/albizan/bot", "label": "Github" }]
     }
   ]
 }
