@@ -32,7 +32,7 @@ const Projectpage = (props) => {
           <img
             src={project.img}
             alt="project screenshot"
-            className="hidden md:block h-32 w-32 rounded-full object-cover object-left"
+            className="hidden md:block h-40 w-40 rounded-full object-cover object-left"
           />
           <div className="md:ml-4">
             <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl">{t(project.title)}</h1>
@@ -52,7 +52,9 @@ const Projectpage = (props) => {
           <h2 className="mt-8 text-lg md:text-xl lg:text-2xl font-bold">
             {t('project_libraries')}
           </h2>
-          <div className="mt-1 pb-20">{renderLibraries(project.libraries)}</div>
+          <div className="mt-1 pb-20 flex flex-wrap flex-col sm:flex-row">
+            {renderLibraries(project.libraries)}
+          </div>
         </div>
       </section>
     </div>
@@ -64,10 +66,10 @@ function renderLinks(links) {
     <LinkButton
       target="_blank"
       key={link.url}
-      className="mt-2 py-1 px-2 mr-2 md:text-lg lg:text-xl"
+      className="mt-2 py-2 px-4 mr-2 md:text-lg lg:text-xl leading-none"
       href={link.url}
     >
-      <FiChrome className="inline text-lg" /> {link.label}
+      <FiChrome className="hidden sm:inline text-lg leading-none" /> {link.label}
     </LinkButton>
   ));
 }
@@ -77,22 +79,17 @@ function renderRepos(repos) {
     <LinkButton
       target="_blank"
       key={repo.url}
-      className="mt-2 py-1 px-2 mr-2 md:text-lg lg:text-xl"
+      className="mt-2 py-2 px-4 mr-2 md:text-lg lg:text-xl leading-none"
       href={repo.url}
     >
-      <FiGithub className="inline text-lg" /> {repo.label}
+      <FiGithub className="hidden sm:inline inline text-lg leading-none" /> {repo.label}
     </LinkButton>
   ));
 }
 
 function renderLibraries(libs) {
   return libs.map((lib) => (
-    <ColoredLink
-      target="_blank"
-      key={lib.url}
-      className="mr-3 text-lg md:text-xl font-bold"
-      href={lib.url}
-    >
+    <ColoredLink target="_blank" key={lib.url} className="mr-3 md:text-lg font-bold" href={lib.url}>
       {lib.label}
     </ColoredLink>
   ));
