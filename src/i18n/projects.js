@@ -57,8 +57,14 @@ const project_2_brief_description = {
   en: "Dynamic Web App that uses Github Rest APis to get information about platform's users",
 };
 const project_2_description = {
-  it: '',
-  en: '',
+  it: `Git Finder è una applicazione web che permette di ottenere informazioni base dell’utente e la lista dei repository tramite chiamate alle API di Github.
+    Ho sviluppato Git Finder per prendere confidenza con React js e React Router e Axios.
+    Durante lo sviluppo di questa web app ho scoperto Tailwindcss, che ho deciso infine di utilizzare per la UI.
+`,
+  en: `Git Finder è una applicazione web che permette di ottenere informazioni base dell’utente e la lista dei repository tramite chiamate alle API di Github.
+    Ho sviluppato Git Finder per prendere confidenza con React js e React Router e Axios.
+    Durante lo sviluppo di questa web app ho scoperto Tailwindcss, che ho deciso infine di utilizzare per la UI.
+`,
 };
 
 const project_3_name = {
@@ -71,8 +77,8 @@ const project_3_brief_description = {
   en: 'Managed, mantained and partially developed a modern website for an architectural firm',
 };
 const project_3_description = {
-  it: '',
-  en: '',
+  it: `Ho provveduto, per uno studio di architettura,  al completo restyling di un vecchio sito web precedentemente creato con joomla. Ho aiutato i titolari della attività nella selezione di un template HTML moderno che ho provveduto a modificare in modo da renderlo più adatto ai nuovi contenuti da mostrare. Mi sono inoltre fatto carico di gestire il deploy del nuovo sito.`,
+  en: `Ho provveduto, per uno studio di architettura,  al completo restyling di un vecchio sito web precedentemente creato con joomla. Ho aiutato i titolari della attività nella selezione di un template HTML moderno che ho provveduto a modificare in modo da renderlo più adatto ai nuovi contenuti da mostrare. Mi sono inoltre fatto carico di gestire il deploy del nuovo sito.`,
 };
 
 const project_4_name = {
@@ -86,8 +92,18 @@ const project_4_brief_description = {
     'Shortify is a link shortener, a web app that makes it easy to shorten and manage links. Frontend is made with React, backend with Node',
 };
 const project_4_description = {
-  it: '',
-  en: '',
+  it: `Shortify è un link shortener, prevede sia la parte di front-end, fatta con React, e sia la parte di back-end fatta con Node. Il sistema è utilizzabile solo previa registrazione utente per mezzo di email e password. Per utilizzare l'applicazione è necessario confermare l’indirizzo email cliccando sul link che viene inviato automaticamente inviato all’indirizzo immesso durante la registrazione.
+  L’autenticazione degli utenti avviene tramite JWT, le password vengono salvate su un database che vive all’interno di un container linux. Prima di essere salvate sul DB le password inserite dagli utenti vengono hashate con bcrypt.
+  Una volta verificato il profilo, gli utenti possono cominciare a accorciare e gestire i loro link da condividere, i quali possono essere momentaneamente disattivati.
+  Il server è stato scritto in Typescript con l’ausilio del framework Nestjs
+  Il frontend è hostato su Netlify mentre il backend è containerizzato grazie a Docker in un VPS privato.
+  `,
+  en: `Shortify è un link shortener, prevede sia la parte di front-end, fatta con React, e sia la parte di back-end fatta con Node. Il sistema è utilizzabile solo previa registrazione utente per mezzo di email e password. Per utilizzare l'applicazione è necessario confermare l’indirizzo email cliccando sul link che viene inviato automaticamente inviato all’indirizzo immesso durante la registrazione.
+  L’autenticazione degli utenti avviene tramite JWT, le password vengono salvate su un database che vive all’interno di un container linux. Prima di essere salvate sul DB le password inserite dagli utenti vengono hashate con bcrypt.
+  Una volta verificato il profilo, gli utenti possono cominciare a accorciare e gestire i loro link da condividere, i quali possono essere momentaneamente disattivati.
+  Il server è stato scritto in Typescript con l’ausilio del framework Nestjs
+  Il frontend è hostato su Netlify mentre il backend è containerizzato grazie a Docker in un VPS privato.
+  `,
 };
 
 const project_5_name = {
@@ -101,8 +117,8 @@ const project_5_brief_description = {
     'Friendly URL is a telegram BOT that analyses urls sent in a chat and shortens them in order to make messages cleaner and easy to read. Furthermore it can add a referral tag to amazon links',
 };
 const project_5_description = {
-  it: '',
-  en: '',
+  it: `Friendly URL è un BOT per telegram che analizza gli url che vengono inviati in chat e li accorcia per rendere i messaggi più leggibili. Il messaggio originale viene eliminato mentre il BOT ne invia uno nuovo che comprende il medesimo testo sostituendo però i vari url con la loro versione accorciata, mascherata da una ancora HTML rappresentata dal dominio del sito web linkato. Il BOT consente inoltre di configurare un tag referral di amazon.it, il quale viene aggiunto automaticamente a tutti i link al sito web del noto sito di e-commerce`,
+  en: `Friendly URL è un BOT per telegram che analizza gli url che vengono inviati in chat e li accorcia per rendere i messaggi più leggibili. Il messaggio originale viene eliminato mentre il BOT ne invia uno nuovo che comprende il medesimo testo sostituendo però i vari url con la loro versione accorciata, mascherata da una ancora HTML rappresentata dal dominio del sito web linkato. Il BOT consente inoltre di configurare un tag referral di amazon.it, il quale viene aggiunto automaticamente a tutti i link al sito web del noto sito di e-commerce`,
 };
 
 const project_6_name = {
@@ -116,8 +132,8 @@ const project_6_brief_description = {
     'MIT is a telegram BOT that allows you to create sale announcements to be automatically inserted in a telegram channel',
 };
 const project_6_description = {
-  it: '',
-  en: '',
+  it: `MIT è un BOT per telegram che consente di generare annunci di vendita di attrezzatura informatica da inserire automaticamente in un canale telegram. All’interno del BOT ci sono varie sezioni: un wizard guidato per creare un nuovo annuncio di vendita o ricerca, vedere i prodotti già messi in vendita, vedere i propri prodotti e cercare feedback per un dato utente. Il BOT comprende inoltre una serie di comandi di amministrazione per gestire i vari annunci`,
+  en: `MIT è un BOT per telegram che consente di generare annunci di vendita di attrezzatura informatica da inserire automaticamente in un canale telegram. All’interno del BOT ci sono varie sezioni: un wizard guidato per creare un nuovo annuncio di vendita o ricerca, vedere i prodotti già messi in vendita, vedere i propri prodotti e cercare feedback per un dato utente. Il BOT comprende inoltre una serie di comandi di amministrazione per gestire i vari annunci`,
 };
 
 const show_more_button = {
