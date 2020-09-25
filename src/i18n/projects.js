@@ -173,6 +173,21 @@ const project_6_description = {
   `,
 };
 
+const project_7_name = {
+  it: 'PC Gaming HUB',
+  en: 'PC Gaming HUB',
+};
+const project_7_brief_description = {
+  it:
+    'Portale in cui viene mostrata una curata selezione di configurazioni di PC Desktop, gli amministratori possono editare, creare o eliminare le configurazioni tramite un pannello di controllo',
+  en:
+    'Website where a curated selection of Desktop PC builds is shown. Admins can edit, create or delete builds through an administration panel',
+};
+const project_7_description = {
+  it: `La parte frontend di PC Gaming HUB è stata crata con Next.js. La pagina della dashboard dedicata agli amministartori del sito viene generata sul server previa verifica presenza dell'access token. Il resto delle pagine sono pagine statiche prerenderizzate in fase di build che comunicano con il server per mezzo di chiamate http. Il server è stato scritto con Nodejs e il framework minimalista Koa.js. Le varie configurazioni sono salvate in un database postgres dockerizzato. Il prezzo delle singole componenti viene monitorato costantemenete tramite un bot che sfrutta le PAAPI di Amazon`,
+  en: `The frontend of PC Gaming HUB was created with Next.js. The admin dashboard page is generated on the server after checking the presence of the access token. All the other pages are just static pre-rendered pages and they communicate with the server through http api calls. The server was written with Nodejs and the minimalist Koa.js framework. The various desktop builds are saved in a dockerized postgres database. The price of the individual components is constantly monitored through a bot using Amazon's PAAPI`,
+};
+
 const show_more_button = {
   it: 'Mostra Altro',
   en: 'Show More',
@@ -200,6 +215,9 @@ export const projects_translation_en = {
   project_6_name: project_6_name.en,
   project_6_brief_description: project_6_brief_description.en,
   project_6_description: project_6_description.en,
+  project_7_name: project_7_name.en,
+  project_7_brief_description: project_7_brief_description.en,
+  project_7_description: project_7_description.en,
 
   show_more_button: show_more_button.en,
 };
@@ -226,6 +244,9 @@ export const projects_translation_it = {
   project_6_name: project_6_name.it,
   project_6_brief_description: project_6_brief_description.it,
   project_6_description: project_6_description.it,
+  project_7_name: project_7_name.it,
+  project_7_brief_description: project_7_brief_description.it,
+  project_7_description: project_7_description.it,
 
   show_more_button: show_more_button.it,
 };

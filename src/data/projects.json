@@ -97,6 +97,17 @@
       "libraries": [{ "label": "Telegrafjs", "url": "https://telegraf.js.org/#/" }],
       "links": [{ "url": "https://t.me/mitricvenbot", "label": "Telegram" }],
       "repos": [{ "url": "https://github.com/albizan/bot", "label": "Github" }]
+    },
+    {
+      "id": 7,
+      "img": "https://ik.imagekit.io/albizan/pcgaming-fun_k3wC3tsn1e.jpg",
+      "tags": ["Next.js", "Koa.js"],
+      "title": "project_7_name",
+      "brief_description": "project_7_brief_description",
+      "description": "project_7_description",
+      "libraries": [{ "label": "Next.js", "url": "https://nextjs.org/" }],
+      "links": [{ "url": "https://pcgaming.fun", "label": "Sito" }],
+      "repos": [{ "url": "https://github.com/albizan/pcgaminghub_frontend", "label": "Github" }]
     }
   ]
 }
