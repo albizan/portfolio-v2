@@ -179,7 +179,7 @@ const project_7_name = {
 };
 const project_7_brief_description = {
   it:
-    'Portale in cui viene mostrata una curata selezione di configurazioni di PC Desktop, gli amministratori possono editare, creare o eliminare le configurazioni tramite un pannello di controllo',
+    'Portale in cui viene mostrata una accurata selezione di configurazioni di PC Desktop, gli amministratori possono editare, creare o eliminare le configurazioni tramite un pannello di controllo',
   en:
     'Website where a curated selection of Desktop PC builds is shown. Admins can edit, create or delete builds through an administration panel',
 };
